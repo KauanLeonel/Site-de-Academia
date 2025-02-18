@@ -3,22 +3,22 @@ let navbar = document.querySelector(".header .navbar")
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times')
-    navbar.classList.togglee('active')
+    navbar.classList.toggle('active')
 }
 
 window.onscroll = () =>{
-    menu.classList.remove('fa-time')
+    menu.classList.remove('fa-times')
     menu.classList.remove('active')
 }
 
 
-var swiper = new Swiper(".home-slider", {
+var swiperHome = new Swiper(".home-slider", {
     spaceBetween: 20,
     effect: "fade",
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 4000,
     },
     centeredSlides: true,
     pagination: {  // Corrigido!
@@ -27,7 +27,7 @@ var swiper = new Swiper(".home-slider", {
     },
 });
 
-var swiper = new Swiper(".review-slider", {
+var swiperReview = new Swiper(".review-slider", {
     spaceBetween: 20,
     grabCursor: true,
     loop:true,
@@ -45,7 +45,7 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-var swiper = new Swiper(".blogs-slider", {
+var swiperBlogs = new Swiper(".blogs-slider", {
     spaceBetween: 20,
     grabCursor: true,
     loop:true,

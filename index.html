@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedTwo</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo"><span>SPEED</span>TWO</a>
 
-        <div id="menu-bt" class="fas fa-bars"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
 
         <nav class="navbar"> <!--Itens de navegação-->
             <a href="#home">Início</a>
@@ -30,7 +31,7 @@
 
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide slide" style="background: url(/imagens/slide1.jpg) no-reapet center/cover;">
+                    <div class="swiper-slide slide" style="background: url(/imagens/slide1.jpg) no-repeat;">
                         <div class="content">
                             <span>Venha para a SpeedTwo você também</span>
                             <h3>Torne-se a sua própria motivação</h3>
@@ -38,7 +39,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide slide" style="background: url(/imagens/slide2.jpg) no-reapet;">
+                    <div class="swiper-slide slide" style="background: url(/imagens/slide2.jpg) no-repeat;">
                         <div class="content">
                             <span>Venha para a SpeedTwo você também</span>
                             <h3>Torne-se a sua própria motivação</h3>
@@ -46,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide slide" style="background: url(/imagens/sldie3.jpg) no-reapet;">
+                    <div class="swiper-slide slide" style="background: url(/imagens/sldie3.jpg) no-repeat;">
                         <div class="content">
                             <span>Venha para a SpeedTwo você também</span>
                             <h3>Torne-se a sua própria motivação</h3>
@@ -123,7 +124,7 @@
                 </div>
 
                 <div class="box">
-                    <div class="image"></div>
+                    <div class="image">
                         <img src="/imagens/caraForte.jpg" alt="">
                     </div>
                     <div class="content">
@@ -155,9 +156,9 @@
                     <p> <i class="fas fa-check"></i> Academia</p>
                     <p> <i class="fas fa-check"></i> Professores</p>
                     <p> <i class="fas fa-check"></i> Acompanhamento</p>
-                    <p> <i class="fas fa-check"></i> Planos Alimentares</p>
-                <a href="#" class="btn"> QUERO!</a>
+                    <p> <i class="fas fa-check"></i> Planos Alimentares</p>  
                 </div>
+                <a href="#" class="btn"> QUERO!</a>
             </div>
 
             <div class="plan">
@@ -168,10 +169,11 @@
                     <p> <i class="fas fa-check"></i> Professores</p>
                     <p> <i class="fas fa-check"></i> Durateston</p>
                     <p> <i class="fas fa-check"></i> Deca-Trembolona</p>
-                <a href="#" class="btn"> QUERO!</a>
                 </div>
+                <a href="#" class="btn"> QUERO!</a>
             </div>
         </section>
+
         <section id="trainers" class="trainers"> <!--Treinadores-->
             <h1 class="heading"><span>Treinadores Especializados</span></h1>
 
@@ -181,7 +183,7 @@
                     <img src="/imagens/treinadorA.jpg" alt="">
                     <div class="content">
                         <span>Personal</span>
-                        <h3>Paulo Leonel</h3>
+                        <h3>Zeca Pagodinho</h3>
                         <div class="share">
                             <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-twitter"></a>
@@ -304,12 +306,13 @@
                     </div>
 
                 </div>
+                
             </div>
         </section>
 
         <section id="blogs" class="blogs"> <!--Blogs-->
-            <id class="heading"> <span>Postagens diárias</span></id>
-            <div class="swiper blogs-slides">
+            <h1 class="heading"> <span>Postagens diárias</span></h1>
+            <div class="swiper blogs-slider">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide slide">
@@ -330,7 +333,7 @@
                         </div>
                         <div class="content">
                             <div class="link"> <a href="#">Por Admin</a><span>|</span> <a href="#">29 fevereiro, 2050</div>
-                            <h3>Fitness na mansão Maromba</h3>
+                            <h3>Togure</h3>
                             <p>Subtitulo</p>
                             <a href="#" class="btn"> Ler mais</a>
                         </div>
@@ -369,12 +372,13 @@
     <footer class="footer">    
         <div class="box-container">
             <div class="box">
-                <a href="#home">Início</a>
-                <a href="#about">Sobre</a>
-                <a href="#features">Nossos Serviços</a>
-                <a href="#pricing">Preços</a>
-                <a href="#trainers">Treinadores</a>
-                <a href="#blogs">blogs</a>
+                <h3>Links rápidos</h3>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#features">Nossos Serviços</a>
+                <a class="links" href="#pricing">Preços</a>
+                <a class="links" href="#trainers">Treinadores</a>
+                <a class="links" href="#blogs">blogs</a>
             </div>
             <div class="box">
                 <h3>Horário de funcionamento</h3>
@@ -409,6 +413,7 @@
         </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

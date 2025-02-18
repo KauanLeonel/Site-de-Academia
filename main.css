@@ -14,7 +14,7 @@
 
 
 html {
-    font-size: 90.5%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
@@ -157,6 +157,7 @@ section{
 }
 
 /*Para criar as bolinhas para mudar de slide*/
+
 .swiper-pagination-bullet {
     height: 2rem;
     width: 2rem;
@@ -164,7 +165,7 @@ section{
     border-radius: 0;
 }
 
-.swiper-pagination-bullet .swiper-pagination-bullet-active{
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: greenyellow;
 }
 
@@ -175,7 +176,7 @@ section{
     gap: 8rem;
 }
 
-.about .image{
+.about .imagem{
     flex: 1 1 42rem;
     position: relative;
 }
@@ -200,7 +201,7 @@ section{
     left: 0;
 }
 
-.about .image img{
+.about .imagem img{
     width: 100%;
     padding: 2rem;
 }
@@ -226,7 +227,9 @@ section{
     padding: 1rem 0;
     line-height: 2;
 }
-
+.about .content .box-container .box {
+    flex: 1 1 20rem;
+}
 .about .content .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -234,32 +237,32 @@ section{
     margin-top: 1rem;
 }
 
-.about .content .box-container h3{
+.about .content .box-container .box h3{
     font-size: 2rem;
     color: white;
 }
 
-.about .content .box-container h3 i{
+.about .content .box-container .box h3 i{
     padding-right: 1.5rem;
     color: greenyellow
 }
 
-.features .box-container{
+.features .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
 }
 
-.features .box-container .box{
-    background: black;
+.features .box-container .box {
+    background: #111;
 }
 
-.features .box-container .box.second{
+.features .box-container .box.second {
     display: flex;
     flex-flow: column-reverse;
 }
 
-.features .box-container .box:hover .image img{
+.features .box-container .box:hover .image img {
     transform: scale(1.1);
 }
 
@@ -287,11 +290,11 @@ section{
 }
 
 .features .box-container .box .content h3{
-    font-size:  2rem;
+    font-size: 2rem;
     color: greenyellow;
 }
 
-.features .box-container .box .content p{
+.features .box-container .box .content p {
     line-height: 2;
     font-size: 1.5rem;
     color: #aaa;
@@ -300,7 +303,7 @@ section{
 
 .pricing{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem,fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem,1fr));
     gap: 1.5rem;
 }
 
@@ -534,7 +537,7 @@ section{
 }
 
 .blogs .slide{
-    background: black;
+    background: #111;
     margin-bottom: 7rem;
 }
 
@@ -591,7 +594,7 @@ section{
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -718,7 +721,7 @@ section{
         gap: 3rem;
     }
 
-    .about .image {
+    .about .imagem {
         margin-top: 5rem;
     }
 
